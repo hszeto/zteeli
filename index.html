@@ -384,25 +384,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
   <!-- Bootstrap js-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
   <!-- Smooth scrolling -->
-  <script type="text/javascript">
-    $(function() {
-      $('nav a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1500);
-            return false;
-          }
-        }
-      });
-    });
-  </script> 
-  <!-- End Smooth scrolling -->
+  <script type="text/javascript" src="javascript/smooth_scolling.js"></script> 
 
 </body>
 </html>
