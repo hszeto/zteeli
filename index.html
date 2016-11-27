@@ -32,25 +32,25 @@
           <!-- Home -->
           <li class="active"><a href="#top">Home</a></li>
           <!-- About -->
-          <li><a href="#about">About Us</a></li>
+          <li><a href="#product-section">Product</a></li>
           <!-- FAQ -->
           <li><a href="#faq">FAQ</a></li>
           <!-- Contact me -->
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#contact-section">Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav> <!-- End navbar -->
 
 <!-- Body Content -->
-  <div class="navbar-spacer" id="top"></div>
+  <div class="spacer" id="top"></div>
 
   <div class="section-container">
     <!-- Intro -->
     <h5>Tire Tread Pattern Band Rings</h5>
     <img alt="banner" src="img/banner.jpg">
-    <br><br>
     <!-- Product -->
+    <div class="spacer" id="product-section"></div>
     <div class="flex">
       <div class="product">
         Our Product
@@ -89,15 +89,37 @@
         Size Chart
       </div>
     </div>
-    <br><br>
-    <!-- About US -->
-    <div id="about">
+    <!-- Contace US -->
+    <div class="spacer" id="contact-section"></div>
+    <div class="contact-page flex">
+      <div class="about-n-contact">
+        <h3>About Us</h3>
+        <p><b>Zteeli</b><br>
+        650 S. Hill St,<br>
+        Los Angeles, CA USA</p>
+        <br>
+        <p>Located in Los Angeles, California, Zteeli specializes in tire tread pattern band rings. We strive to provide the best service possible, with high quality and customer satisfaction. Should you have any suggestion or products that you would like to see, please feel free to email us at the Contact page.</p>
+      </div>
+      <div class="about-n-contact">
+        <h3>Contact Us</h3>
+        <div class="email-section form-group">
+          <form method="POST" action="https://formspree.io/sales@zteeli.com">
+            <input type="email" name="email" class="form-control" placeholder="Your email">
+            <textarea name="message" class="form-control" placeholder="Your message"></textarea>
+            <br>
+            <button type="submit" class="btn btn-info btn-email">Send</button>
+          </form>
+        </div>
+        <br><br><br>
+        <div class="float-right">
+          <sub>COPYRIGHT 2016 ZTEELI. ALL RIGHTS RESERVED.</sub>
+        </div>
+      </div>
     </div>
+    <br>
   </div>
-  <div>
 
-<!-- Bootstrap Modal from http://bootstrapbay.com/blog/bootstrap-tutorial-modal/ 
-  and http://www.sitepoint.com/understanding-bootstrap-modals/ -->
+  <!-- Bootstrap Modal -->
   <div class="modal fade" id='str010' role="dialog">
     <div class="modal-dialog modal-md">
       <div class="modal-content">
@@ -366,14 +388,14 @@
   <!-- Smooth scrolling -->
   <script type="text/javascript">
     $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
+      $('nav a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
           if (target.length) {
             $('html,body').animate({
               scrollTop: target.offset().top
-            }, 2000);
+            }, 1500);
             return false;
           }
         }
