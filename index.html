@@ -30,35 +30,26 @@
       <div class="navbar-collapse collapse"> 
         <ul class="nav navbar-nav navbar-right">
           <!-- Home -->
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="#top">Home</a></li>
           <!-- About -->
-          <li><a href="#about">About</a></li>
-          <!-- Dropdown menu -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="glyphicon glyphicon-align-left"></b></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">Admin & Dashboard</li>
-                  <li><a href="#">Admin 1</a></li>
-                  <li><a href="#">Admin 2</a></li>
-                <li class="dropdown-header">Portfolio</li>
-                  <li><a href="#">Portfolio 1</a></li>
-                  <li><a href="#">Portfolio 2</a></li>
-              </ul>
-          </li>
+          <li><a href="#about">About Us</a></li>
+          <!-- FAQ -->
+          <li><a href="#faq">FAQ</a></li>
           <!-- Contact me -->
-          <li><a href="#contact" data-toggle="modal">Contact</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav> <!-- End navbar -->
 
 <!-- Body Content -->
-  <div class="navbar-spacer"></div>
+  <div class="navbar-spacer" id="top"></div>
 
   <div class="section-container">
     <!-- Intro -->
     <h5>Tire Tread Pattern Band Rings</h5>
     <img alt="banner" src="img/banner.jpg">
+    <br><br>
     <!-- Product -->
     <div class="flex">
       <div class="product">
@@ -98,7 +89,12 @@
         Size Chart
       </div>
     </div>
+    <br><br>
+    <!-- About US -->
+    <div id="about">
+    </div>
   </div>
+  <div>
 
 <!-- Bootstrap Modal from http://bootstrapbay.com/blog/bootstrap-tutorial-modal/ 
   and http://www.sitepoint.com/understanding-bootstrap-modals/ -->
@@ -369,13 +365,22 @@
 
   <!-- Smooth scrolling -->
   <script type="text/javascript">
-    var throttled = _.throttle(updatePosition, 100);
-    $(window).scroll(throttled);
-
-    function updatePosition(){
-      console.log(throttled);
-    }
-  </script> <!-- End Smooth scrolling -->
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 2000);
+            return false;
+          }
+        }
+      });
+    });
+  </script> 
+  <!-- End Smooth scrolling -->
 
 </body>
 </html>
