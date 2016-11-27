@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Bootstrap and theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+    
+</head>
+
+<body>
+<!-- Responsive navbar from http://bootstrapbay.com/blog/bootstrap-tutorial-navbar/ -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Hamburger button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img alt="Zteeli" src="img/Zteeli_logo.jpg" style="max-width:100px; margin-top: -7px;">
+        </a>
+      </div>
+      <!-- Collapsable menu buttons -->
+      <div class="navbar-collapse collapse"> 
+        <ul class="nav navbar-nav navbar-right">
+          <!-- Home -->
+          <li class="active"><a href="#">Home</a></li>
+          <!-- About -->
+          <li><a href="#about">About</a></li>
+          <!-- Dropdown menu -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Themes <b class="glyphicon glyphicon-align-left"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Admin & Dashboard</li>
+                  <li><a href="#">Admin 1</a></li>
+                  <li><a href="#">Admin 2</a></li>
+                <li class="dropdown-header">Portfolio</li>
+                  <li><a href="#">Portfolio 1</a></li>
+                  <li><a href="#">Portfolio 2</a></li>
+              </ul>
+          </li>
+          <!-- Contact me -->
+          <li><a href="#contact" data-toggle="modal">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- End navbar -->
+
+<!-- Body Content -->
+  <div class="navbar-spacer"></div>
+
+  <div class="section-container">
+    <!-- Intro -->
+    <h5>Tire Tread Pattern Band Rings</h5>
+    <img alt="banner" src="img/banner.jpg">
+    <!-- Product -->
+    <div class="flex">
+      <div class="product">
+        Our Product
+      </div>
+      <div class="product">
+        <a href="#str010" data-toggle="modal"><img src="img/str010.jpg"></a>
+      </div>
+      <div class="product">
+      </div>
+      <div class="product">
+      </div>
+      <div class="product">
+      </div>
+      <div class="product">
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap Modal from http://bootstrapbay.com/blog/bootstrap-tutorial-modal/ 
+  and http://www.sitepoint.com/understanding-bootstrap-modals/ -->
+  <div class="modal fade" id='contact' role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+            <p><span>Contact Header</span>
+        </div>
+        <div class="modal-body">
+          <h2>Contact Body</h2>
+        </div>      
+        <div class="modal-footer">
+          <p>Footer</p>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id='str010' role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+          <h3>Tire Tread Pattern TR010 Stainless Steel Band Ring</h3>
+        </div>
+        <div class="modal-body clearfix">
+          <img src="img/str010.jpg" width="400" style="float:left;">
+          <b>
+            Long lasting stainless steel<br>
+            Comfort fit design<br>
+            8mm width<br>
+            Size from #7 to #14<br>
+            Part Number: TR010<br>
+          </b>
+          <br>
+          <a  href="https://www.amazon.com/Tread-Pattern-tr010-Stainless-Steel/dp/B00XKQ5LHS" 
+              target="_blank" 
+              class="btn btn-info">Buy now from Amazon</a>
+        </div>      
+      </div>
+    </div>
+  </div>
+
+<!-- ALL THE SCRIPT -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- Underscore js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+  <!-- Bootstrap js-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <!-- Smooth scrolling -->
+  <script type="text/javascript">
+    var throttled = _.throttle(updatePosition, 100);
+    $(window).scroll(throttled);
+
+    function updatePosition(){
+      console.log(throttled);
+    }
+  </script> <!-- End Smooth scrolling -->
+
+</body>
+</html>
