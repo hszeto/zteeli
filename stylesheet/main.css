@@ -22,6 +22,10 @@ img {
 .text-center{
   text-align: center;
 }
+.text-just{
+  text-align: justify;
+  text-justify: inter-word;
+}
 .spacer{
   height:52px;
 }
@@ -34,7 +38,7 @@ img {
 .section-container{
   max-width: 980px;
   margin: 0 auto;
-  text-align: center;
+  /*text-align: center;*/
 }
 /*Product page*/
 .product-container{
@@ -66,6 +70,11 @@ img {
   max-width: 350px;
   height: auto;
 }
+.modal-body-chart img{
+  max-width: 600px;
+  height: auto;
+}
+
 /*contact page*/
 .contact-page{
   background-color: #dcdcdc;
@@ -81,4 +90,12 @@ img {
 }
 .btn-email{
   min-width: 300px;
+}
+/*FAQ*/
+.chart{
+  max-width: 780px;
+  margin: 0 auto;
+}
+.amazon_logo{
+  max-width: 100px;
 }

@@ -1,6 +1,10 @@
 <!doctype html>
 <html>
 <head>
+  <title>Zteeli Stainless Steel Band Rings</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Zteeli stainless steel band rings">
+  <meta name="keywords" content="stainless,steel,band ring,ring">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!-- Bootstrap and theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -22,7 +26,7 @@
           <span class="icon-bar"></span>
         </button>
         <!-- Logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img alt="Zteeli" src="img/Zteeli_logo.jpg" style="max-width:100px; margin-top: -7px;">
         </a>
       </div>
@@ -30,11 +34,11 @@
       <div class="navbar-collapse collapse"> 
         <ul class="nav navbar-nav navbar-right">
           <!-- Home -->
-          <li class="active"><a href="#top">Home</a></li>
+          <li><a href="#top">Home</a></li>
           <!-- About -->
           <li><a href="#product-section">Product</a></li>
           <!-- FAQ -->
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           <!-- Contact me -->
           <li><a href="#contact-section">Contact Us</a></li>
         </ul>
@@ -47,7 +51,7 @@
 
   <div class="section-container">
     <!-- Intro -->
-    <h5>Tire Tread Pattern Band Rings</h5>
+    <h5 class="text-center">Tire Tread Pattern Band Rings</h5>
     <img alt="banner" src="img/banner.jpg">
     <!-- Product -->
     <div class="spacer" id="product-section"></div>
@@ -86,7 +90,7 @@
         <a href="#str019" data-toggle="modal"><img src="img/str019.jpg"></a>
       </div>
       <div class="product">
-        Size Chart
+        <a href="#size_chart" data-toggle="modal">Size Chart</a>
       </div>
     </div>
     <!-- Contace US -->
@@ -98,19 +102,18 @@
         650 S. Hill St,<br>
         Los Angeles, CA USA</p>
         <br>
-        <p>Located in Los Angeles, California, Zteeli specializes in tire tread pattern band rings. We strive to provide the best service possible, with high quality and customer satisfaction. Should you have any suggestion or products that you would like to see, please feel free to email us at the Contact page.</p>
+        <p class="text-just">Located in Los Angeles, California, Zteeli specializes in tire tread pattern band rings. We strive to provide the best service possible, with high quality and customer satisfaction. Should you have any question, suggestion or products that you would like to see, please feel free to email us. sales@zteeli.com</p>
       </div>
       <div class="about-n-contact">
         <h3>Contact Us</h3>
         <div class="email-section form-group">
           <form method="POST" action="https://formspree.io/sales@zteeli.com">
-            <input type="email" name="email" class="form-control" placeholder="Your email">
-            <textarea name="message" class="form-control" placeholder="Your message"></textarea>
-            <br>
+            <input type="email" name="email" class="form-control" placeholder="Your email"><br>
+            <textarea name="message" class="form-control" placeholder="Your message"></textarea><br>
             <button type="submit" class="btn btn-info btn-email">Send</button>
           </form>
         </div>
-        <br><br><br>
+        <br><br>
         <div class="float-right">
           <sub>COPYRIGHT 2016 ZTEELI. ALL RIGHTS RESERVED.</sub>
         </div>
@@ -375,17 +378,27 @@
     </div>
   </div>
 
-<!-- ALL THE SCRIPT -->
+  <div class="modal fade" id='size_chart' role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Close</button>
+        <div class="modal-body-chart">
+          <img src="img/Size_Chart.jpg" >
+        </div>      
+      </div>
+    </div>
+  </div>
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <!-- Underscore js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-  <!-- Bootstrap js-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <!-- Smooth scrolling -->
-  <script type="text/javascript" src="javascript/smooth_scolling.js"></script> 
+  <!-- ALL THE SCRIPT -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Underscore js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- Smooth scrolling -->
+    <script type="text/javascript" src="javascript/smooth_scolling.js"></script> 
 
 </body>
 </html>
